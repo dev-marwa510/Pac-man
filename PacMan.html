@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Pac-Man </title>
+    <link href="PacMan.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spiel Regeln-->
+    <h1>How to Play:</h1>
+    <h4>
+        Use W, A, S, D keys to move. <br>
+        Eat all the crystals to win. <br>
+        Avoid ghosts unless you've eaten a PowerUp Crystal, <br>
+        which makes them scared of you. <br>
+        Then you can eat them too.
+    </h4>
+    <!-- Hintergrund Musik-->
+    <p class="audioText"> __↓ Click this to Play Music__</p>
+    <div class="audioControl">
+        <audio id="backgroundMusic" controls autoplay loop>
+            <source src="Pac_man_theme.mp3">
+        </audio>
+        <audio id="winMusic">
+            <source src="Pac_man_Win_theme.mp3">
+        </audio>
+        <audio id="loseMusic">
+            <source src="Pac_man_Death_theme.mp3">
+        </audio>
+        <audio id="eatingSound">
+            <source src="Pac_man_eating_ghosts_sounds.mp3">
+        </audio>
+    </div>
+    <!--Punktzahl-->
+    <h2>
+        <span>
+            Score:
+        </span>
+        <span id="scoreEl">
+            0
+        </span>
+    </h2>
+    <canvas></canvas>
+    <script src="PacMan.js"></script>
+</body>
+
+</html>
